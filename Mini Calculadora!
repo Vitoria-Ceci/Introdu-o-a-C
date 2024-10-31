@@ -1,0 +1,37 @@
+//Uma pequena Calculadora! Coloque dois números e escolha a operação! Obrigada.
+
+
+#include <stdio.h>
+int main()
+{
+    int Num1, Num2;
+    char conta;
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &Num1);
+    printf("Digite o segundo numero: ");
+    scanf("%d", &Num2);
+    
+    printf("Escolha entre essas operações:\n Multiplicação = M\n, Divisão = D\n, Adição = A\n, Subtração = S\n.");
+    printf("Diga qual vai ser a operação: ");
+    scanf(" %c", &conta);
+        //Escolherá a Multiplicação
+    if (conta == 'M') {
+        printf("Resultado: %d\n", Num1 * Num2);
+    }  //Escolherá a Adição
+    else if (conta == 'A') {
+        printf("Resultado: %d\n", Num1 + Num2);
+    } //Escolherá a Subtração
+    else if (conta == 'S'){
+        printf("Resultado: %d\n", Num1 - Num2);
+    } Escolherá a adivisão
+    else if (conta == 'D') {
+        printf("Resultado: %d\n", Num1 / Num2);
+    }
+    else {
+        printf("operação invalida!Por Favor escolher, "M=Multiplicação","A=adição","D=divisão" e "S=Subtração".");
+    }
+    
+      
+    
+    return 0;
+}
