@@ -1,0 +1,15 @@
+//Convertor de Celcius para Farenheint!
+
+
+#include <stdio.h>
+
+int main()
+{
+    float Celsius;
+    printf("Digite uma temperatura em Celsius:");
+    scanf("%f", &Celsius);
+    float Farenheit = (Celsius * 9/5) + 32;
+    printf("A conversão de celsius para Farenheit: %.2f\n", Farenheit);
+
+    return 0;
+}
